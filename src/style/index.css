@@ -1,0 +1,99 @@
+blockquote, body, button, dd, dl, dt, fieldset, form, h1, h2, h3, h4, h5, h6, hr, input, legend, li, ol, p, pre, select, td, textarea, th, ul { margin: 0px; padding: 0px; }
+body { background: rgb(250, 250, 250); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 14px; line-height: 1.5; font-family: "Microsoft YaHei", Helvetica, sans-serif; color: gray; text-size-adjust: 100% !important; }
+
+button, input, select, textarea { font-size: 0.12rem; font-family: inherit; color: inherit; -webkit-appearance: none; }
+
+select:active, select:focus { background-color: transparent; }
+
+a, body, button, img, input, label, select, textarea { outline: none; -webkit-tap-highlight-color: transparent; }
+
+input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-outer-spin-button { -webkit-appearance: none; }
+
+input::-webkit-input-placeholder { color: rgb(154, 154, 154); }
+
+b, h1, h2, h3, h4, h5, h6, strong { font-weight: 400; }
+
+ol, ul { list-style: none; }
+
+table { border-collapse: collapse; border-spacing: 0px; }
+
+img { border: none; }
+
+a { color: rgb(26, 118, 204); text-decoration: none; }
+
+a, img { -webkit-user-select: none; }
+body, html { overflow-x: hidden; box-sizing: border-box; -webkit-user-select: none;font-family:  "Helvetica Neue","Hiragino Sans GB","Microsoft YaHei","\9ED1\4F53",Arial,sans-serif; }
+footer, header, nav, section { display: block; }
+.warp{
+  width: 1170px;
+  margin: 0 auto;
+}
+.warpContent .center{
+  padding: 10px 50px 0 50px;
+}
+.warp .logo{
+  display: block;
+  line-height: 64px;
+  height: 64px;
+  background: url('../image/logo.png') left center no-repeat;
+  background-position: 0 0;
+}
+.header_tab {
+  display: flex;
+  justify-content: center;
+  align-items: center
+}
+.header_tab li{
+  width: 80px;
+  font-size: 18px;
+  color: #108ee9;;
+}
+.header_tab li a{
+  display: block;
+  height: 100%;
+  text-align: center;
+}
+.loginBtn{
+  font-size: 14px;
+  width: 100%;
+  text-align: center;
+}
+.loginBtn span{
+  padding: 7px 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  color: #999;
+}
+.warpContent .ant-layout-header {
+  background-color: #fcfcfc;
+  height: 64px;
+  line-height: 64px;
+}
+.warpContent .ant-layout-header .ant-row{
+  border-bottom: 1px solid #eee;
+}
+.header_currPage{
+  color: #f2bd00;
+  border-bottom: 2px solid #108ee9;
+}
+/*热门电影   公共*/
+.content_title{
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #eee;
+  height: 36px;
+  line-height: 30px;
+  padding: 5px 10px 5px 0px;
+  margin-bottom: 8px;
+}
+.content_title .title_text{ font-size:18px;}
+.content_title .title_text a{color: #E8570C;}
+.content_title .pagination{height: 24px;line-height: 24px;}
+.HotMovie .item{width: 20%;}
+.HotMovie  .MovieItem{margin :0 5px}
+.HotMovie  .MovieItem .imgBox{height: 280px;}
+.HotMovie  .MovieItem img{width: 100%;height: 100%;}
+.HotMovie  .MovieItem .imgMsg{display: flex;justify-content: space-between;align-items: center;color: #108ee9;font-size: 16px;margin-top: 10px;}
+.MovieItem .imgMsg .title{white-space: nowrap;text-overflow: ellipsis;display: inline-block;width: 85%;overflow: hidden;}
+.HotMovie  .MovieItem .rating{color: #E8570C; }
+.HotMovie  .MovieItem .genre{color: #66CD00;font-size: 15px;width: 25%;text-align: right;display: inline-block;}

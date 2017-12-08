@@ -1,0 +1,73 @@
+.MovieLayout{
+
+}
+.MovieLayout .ant-layout-sider{
+    background: transparent;
+}
+.movie_menu{
+    border: 1px solid #eee;
+    margin-right: 10px;
+    border-radius: 10px;
+}
+.movie_menu .ant-anchor{
+    text-align: center;
+}
+.movie_menu .ant-anchor-ink{
+    display: none;
+}
+.movie_menu .ant-anchor-link {
+    line-height: 20px;
+    font-size: 14px;
+    padding:8px;
+}
+/*电影详情*/
+.DetailLayout{}
+.movieBanner{
+    height: 350px;
+    background-image: url("../image/banner.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.movieBanner .bannerCon{
+    display: flex;
+    padding: 20px 50px;
+}
+.movieBanner .bannerCon .imgBox{
+    width: 220px;
+    height: 300px;
+}
+.bannerCon .imgBox img{width: 100%;height: 100%}
+.DetailInfro{min-width: 400px;padding-left: 40px;}
+.DetailInfro .title{
+   padding-bottom: 20px;
+}
+.DetailInfro .title p{padding:0}
+.DetailInfro .title h3{color: #fff;font-size: 18px;}
+.DetailInfro  p{color: #fff;font-size: 13px;margin-top: 12px;}
+.core .movie_gate {
+    font-size: 50px;
+    font-family: sans-serif;
+    color: #108ee9;
+    padding: 20px;
+    text-align: center;
+}
+.bannerCon .core{padding-left: 20px;}
+.ant-card{margin-top: 20px;}
+.movieIntro .roleActor{display: flex;font-size: 14px;color: #333;text-align: center;}
+.movieIntro .roleActor li {margin-left: 20px;}
+.roleActor li  .topOne{min-height: 30px;line-height: 30px;}
+.movieIntro .roleActor .imgBox{ display: inline-block;width: 128px;height: 170px;}
+.movieIntro .roleActor .imgBox img{width: 100%;height: 100%;}
+
+.CommentCon .commentList li{font-size: 13px;color: #666;padding: 10px 0;}
+.commentList li .one{display: flex;justify-content: space-between;border-bottom: 1px solid #eee;padding-bottom: 10px;}
+.commentList li .one .left{display: flex;align-items: center;}
+.commentList li .one .left img{    width: 30px; height: 30px;  border-radius: 15px; margin-right: 10px;}
+.commentList li .two{border-bottom: 1px solid #eee;margin-top: 10px;padding-bottom: 10px;}
+.CommentCon .loadMore{font-size: 14px;color: #666;text-align: center}
+.CommentCon .loadMore .ant-btn{width: 100%;}
+
+.movieAbout{}
+.movieAbout .listUl li {display: flex;align-items: center;padding-bottom: 10px;}
+.movieAbout .listUl li img{width: 40px;height: 40px;margin-right: 10px;}
+.listUl li .imgMsg .name{ font-size: 10px;color: #4fd2be;}

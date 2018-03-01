@@ -4,7 +4,7 @@ import HotMovie from '../movie/HotMovie'
 import SpotNew from '../news/spotNews'
 import MusicList from '../music/MusicList'
 import '../../style/home.css'
-export default class HomeContainer extends React.Component{
+class HomeContainer extends React.Component{
     render(){
         return(
           <div className='homeLayout'>
@@ -25,4 +25,5 @@ export default class HomeContainer extends React.Component{
         )
     }
 }
+export default HomeContainer
 

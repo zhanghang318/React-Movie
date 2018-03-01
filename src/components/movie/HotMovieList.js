@@ -2,9 +2,6 @@ import React from 'react'
 import {Row} from 'antd'
 import MovieItem from './MovieItem'
 export default class HotMovieList extends React.Component{
-    componentWillReceiveProps(nextProps){
-        console.log(nextProps.currentStep)
-    }
        render(){
             let ItemList = null
             const {MovieDate,type,current,pageSize} = this.props

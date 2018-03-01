@@ -7,7 +7,7 @@ export default  class MovieItem extends React.Component{
        let page = pageSize || 4
       return (
           <Col span={24 / parseInt(page)}>
-          <div className='MovieItem'>
+              <div className='MovieItem'>
                   <div className='imgBox'>
                       <Link to={'/movie/'+id}>
                           <img src={imgUrl} alt=""/>

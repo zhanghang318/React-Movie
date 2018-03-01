@@ -1,7 +1,7 @@
 import React from 'react'
 import {BrowserRouter as Router,HashRouter,Route} from 'react-router-dom'
 import AppContainer from '../container/AppContainer'
-export default class RootRooter extends React.Component{
+class RootRooter extends React.Component{
     render(){
         return (
             <Router>
@@ -11,3 +11,4 @@ export default class RootRooter extends React.Component{
         )
     }
 }
+export default RootRooter

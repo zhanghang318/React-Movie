@@ -14,7 +14,6 @@ export default class MovieDetail extends React.Component{
         let that = this
         if(this.props.match.params.id){
             axGet('/v2/movie/subject/'+this.props.match.params.id).then(function(res){
-                console.log(typeof res.status)
               if(res.status===200 && !that.unmount){
                   that.setState({
                       data:res.data,

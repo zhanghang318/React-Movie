@@ -3,7 +3,6 @@
  */
 import axios from 'axios'
 import qs from 'qs'
-
 axios.interceptors.request.use(config => {
     // loading
     return config

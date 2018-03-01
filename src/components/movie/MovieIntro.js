@@ -2,6 +2,7 @@ import React from 'react'
 import {Card,Icon} from 'antd'
 import Loading from '../common/loading'
 import MovieComment from '../movie/MovieComment'
+import {axGet} from '../../api/api'
 const MovieIntro = ({isLoading,data})=>{
     let directorList,ActorList
     if(!isLoading){
@@ -16,17 +17,25 @@ const MovieIntro = ({isLoading,data})=>{
                 <p className='topTwo'>{item.name}</p>
             </li>
         ))
-        ActorList = data.casts.map((item,index)=>(
-            <li  key={item.id}>
-                <p className='topOne'>{index===0?'主演':""}</p>
-                <a href={item.alt}>
-                    <div className='imgBox'>
-                        <img src={item.avatars.small} alt=""/>
-                    </div>
-                </a>
-                <p>{item.name}</p>
-            </li>
-        ))
+        ActorList =  data.casts.map( (item,index)=>{
+             if(index===0){
+                axGet(item.avatars.small).then(function(res){
+                    console.log(res)
+                },function(error){console.log(error)})
+             }
+                return (
+                    <li  key={item.id}>
+                        <p className='topOne'>{index===0?'主演':""}</p>
+                        <a href={item.alt}>
+                            <div className='imgBox'>
+                                <img src={item.avatars.small} alt=""/>
+                            </div>
+                        </a>
+                        <p>{item.name}</p>
+                    </li>
+                )
+        }
+        )
     }
     return(
         <div className='movieIntro'>
